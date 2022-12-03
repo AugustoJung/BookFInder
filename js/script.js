@@ -4,9 +4,16 @@ let bodyID = document.getElementById("body");
 let textinho = document.getElementById("textinho_bonito");
 let livros = document.getElementById("livro_show");
 let capa = document.getElementById("livro_img");
+let input = document.getElementById("input");
 
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("busca-btn").click();
+  }
+});
 
-function trocarFundo(){
+buscabtn.addEventListener("click", function trocarFundo(){
     bodyID.style.transition = "0.5s ease-in-out";
     bodyID.style.backgroundImage = "url(./imgs/image_3.png)";
     textinho.style.visibility = "hidden";
@@ -16,6 +23,8 @@ function trocarFundo(){
     let URL = "http://openlibrary.org/search.json?q="+document.getElementById("input").value;
     fetch(URL, {
         method: 'GET'
+    }, {
+        referrerPolicy: "unsafe_url" 
     })
     .then(a => a.json())
     .then(response =>{
@@ -26,4 +35,5 @@ function trocarFundo(){
         link.textContent = `${response.docs[0].title}`
         capa.src = "http://covers.openlibrary.org/b/isbn/"+response.docs[0].isbn[0]+"-M.jpg"
     })
-}
+});
+
