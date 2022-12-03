@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFinder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="author" content="Augusto Jung">
+    <meta name="description" content="Atividade sobre API">
+    <link rel="icon" href="./img/book_PNG51109.webp">
+</head>
+<body id="body">
+    <div id="wrapper">
+        <nav>
+            <h1 id="titulo">BookFinder</h1>
+        </nav>
+        <main>
+            <section id="pegar">
+                <div id="in">
+                    <input id="input" type="text" placeholder="Digite o nome do livro">
+                    <button onclick="trocarFundo()" type="submit"id="busca-btn"><img src="./imgs/buscaimg.svg" alt="" id="busca"></button>
+                </div>
+            </section>
+            <section id="textinho_bonito">
+                <h1 id="top_textinho">
+                    Leia e de asas a sua imaginação!
+                </h1>
+                <p id="textinho">
+                    A leitura estimula o raciocínio, melhora o vocabulário, aprimora a capacidade interpretativa, além de proporcionar ao leitor um conhecimento amplo e diversificado sobre vários assuntos. Ler desenvolve a criatividade, a imaginação, a comunicação, o senso crítico, e amplia a habilidade na escrita.
+                </p>
+            </section>
+            <section id="livro_show">
+                <img src="./imgs/capa.jpg" alt="" id="livro_img">
+                <div id="livro_dados">
+                    <h1 id="titulo_livro">Titulo do livro</h1>
+                    <h2 id="autor">Autor</h2>
+                    <h3 id="ano">Ano</h3>
+                    <div id="links">
+                        <p>Link para o livro:</p>
+                        <a href="" id="link">Link</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>
