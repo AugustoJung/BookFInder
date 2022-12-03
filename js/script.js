@@ -13,7 +13,10 @@ function trocarFundo(){
     textinho.style.display = "none";
     livros.style.display = "flex";
     livros.style.visibility = "visible";
-    fetch("http://openlibrary.org/search.json?q="+document.getElementById("input").value)
+    let URL = "http://openlibrary.org/search.json?q="+document.getElementById("input").value;
+    fetch(URL, {
+        method: 'GET'
+    })
     .then(a => a.json())
     .then(response =>{
         titulo_livro.textContent = `${response.docs[0].title}`
