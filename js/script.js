@@ -37,7 +37,6 @@ buscabtn.addEventListener("click", function trocarFundo(){
     })
   setTimeout(function(){ if(titulo_livro.textContent == "A Game of Thrones"){
         bodyID.style.backgroundImage = "url(./imgs/gof.jpg)";
-        capa.src = "../imgs/capa.jpg";
     } }, 5000);
 });
 
