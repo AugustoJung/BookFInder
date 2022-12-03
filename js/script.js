@@ -5,11 +5,10 @@ let textinho = document.getElementById("textinho_bonito");
 let livros = document.getElementById("livro_show");
 let capa = document.getElementById("livro_img");
 
-bodyID.style.backgroundImage = "url(../imgs/image_2.jpg)";
 
 function trocarFundo(){
     bodyID.style.transition = "0.5s ease-in-out";
-    bodyID.style.backgroundImage = "url(../imgs/image_3.png)";
+    bodyID.style.backgroundImage = "url(./imgs/image_3.png)";
     textinho.style.visibility = "hidden";
     textinho.style.display = "none";
     livros.style.display = "flex";
