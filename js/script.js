@@ -33,7 +33,7 @@ buscabtn.addEventListener("click", function trocarFundo(){
         autor.textContent = `${response.docs[0].author_name[0]}`
         link.href = "https://openlibrary.org/isbn/"+response.docs[0].isbn[0]
         link.textContent = `${response.docs[0].title}`
-        capa.src = "http://covers.openlibrary.org/b/isbn/"+response.docs[0].isbn[0]+"-M.jpg"
+        capa.src = "https://covers.openlibrary.org/b/isbn/"+response.docs[0].isbn[0]+"-M.jpg"
     })
 });
 
