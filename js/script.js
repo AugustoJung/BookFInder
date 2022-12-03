@@ -35,5 +35,9 @@ buscabtn.addEventListener("click", function trocarFundo(){
         link.textContent = `${response.docs[0].title}`
         capa.src = "https://covers.openlibrary.org/b/isbn/"+response.docs[0].isbn[0]+"-M.jpg"
     })
+  setTimeout(function(){ if(titulo_livro.textContent == "A Game of Thrones"){
+        bodyID.style.backgroundImage = "url(./imgs/gof.jpg)";
+        capa.src = "../imgs/capa.jpg";
+    } }, 5000);
 });
 
