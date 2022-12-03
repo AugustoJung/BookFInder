@@ -20,7 +20,7 @@ buscabtn.addEventListener("click", function trocarFundo(){
     textinho.style.display = "none";
     livros.style.display = "flex";
     livros.style.visibility = "visible";
-    let URL = "http://openlibrary.org/search.json?q="+document.getElementById("input").value;
+    let URL = "https://openlibrary.org/search.json?q="+document.getElementById("input").value;
     fetch(URL, {
         method: 'GET'
     }, {
